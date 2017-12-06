@@ -1,0 +1,81 @@
+// colors:
+$orange: #e67e22;
+$yellow: #f1c40f;
+$blue: #25459B;
+$midnight: #2c3e50;
+
+body {
+  background: linear-gradient(45deg, $orange, $yellow);
+  background-size: contain;
+}
+
+.fa {
+  color: $midnight;
+  font-size: 50px;
+  position: absolute;
+  
+  &.fa-arrow-up {
+    left: 50%;
+    top: 40px;
+    margin-left: -66px;
+    transition: .2s;
+    
+    &:hover {
+      top: 30px;
+    }
+  }
+  
+  &.fa-arrow-down {
+    top: 620px;
+    margin-left: -65px;
+    left: 50%;
+    transition: .2s;
+    
+    &:hover {
+      top: 630px;
+    }
+  }
+  
+  &.fa-arrow-left {
+    left: 50%;
+    margin-left: -360px;
+    top: 325px;
+    transition: .2s;
+    
+    &:hover {
+      margin-left: -370px;
+    }
+  }
+  
+  &.fa-arrow-right {
+    left: 50%;
+    margin-left: 220px;
+    top: 325px;
+    transition: .2s;
+    
+    &:hover {
+      margin-left: 230px;
+    }
+  }
+}
+
+.container {
+  width: 500px;
+  height: 500px;
+  border: solid 5px $blue;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  margin-left: -300px;
+
+  .square {
+    width: 250px;
+    height: 250px;
+    background: radial-gradient($blue, $midnight);
+    box-shadow: 0 0 30px $midnight;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    opacity: .9;
+  }
+}

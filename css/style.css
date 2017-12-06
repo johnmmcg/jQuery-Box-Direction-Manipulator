@@ -1,0 +1,66 @@
+body {
+  background: linear-gradient(45deg, #e67e22, #f1c40f);
+  background-size: contain;
+}
+
+.fa {
+  color: #2c3e50;
+  font-size: 50px;
+  position: absolute;
+}
+.fa.fa-arrow-up {
+  left: 50%;
+  top: 40px;
+  margin-left: -66px;
+  transition: .2s;
+}
+.fa.fa-arrow-up:hover {
+  top: 30px;
+}
+.fa.fa-arrow-down {
+  top: 620px;
+  margin-left: -65px;
+  left: 50%;
+  transition: .2s;
+}
+.fa.fa-arrow-down:hover {
+  top: 630px;
+}
+.fa.fa-arrow-left {
+  left: 50%;
+  margin-left: -360px;
+  top: 325px;
+  transition: .2s;
+}
+.fa.fa-arrow-left:hover {
+  margin-left: -370px;
+}
+.fa.fa-arrow-right {
+  left: 50%;
+  margin-left: 220px;
+  top: 325px;
+  transition: .2s;
+}
+.fa.fa-arrow-right:hover {
+  margin-left: 230px;
+}
+
+.container {
+  width: 500px;
+  height: 500px;
+  border: solid 5px #25459B;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  margin-left: -300px;
+}
+.container .square {
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(#25459b, #2c3e50);
+  box-shadow: 0 0 30px #2c3e50;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  opacity: .9;
+}
